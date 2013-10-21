@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+	<title>Q3. JSON Basketball Results</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+  </head>
+
+  <body>
+	<h1>Q3. JSON Basketball Results</h1>
+	
+	<pre>
+thisweek.json
+
+{
+  "week": "51st of 2011",
+  "games": [
+    { "url": "game1.json" },
+    { "url": "game2.txt" }
+   ]
+}
+	</pre>
+
+	<pre>
+$.get( "thisweek.json", function(data){
+		$(this).summary(data);
+	});
+
+	$.fn.summary = function( data ) {
+
+		gameData = data.games;
+
+		$.each(gameData, function(i, item){
+			url = gameData[i].url;
+			$.get(url, function(teamData){
+				$(".result").append("<li>"+teamData.teams[0].name+" "+teamData.teams[0].score+" - "+teamData.teams[1].score+" "+teamData.teams[1].name+"</li>")
+		}, "json" );
+	});
+};
+	</pre>
+
+
+ 	<div>
+ 		<ul class="result"></ul>
+ 	</div>
+
+    <script type="text/javascript" src="js/q3.js"></script>
+  </body>
+</html>

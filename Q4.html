@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+	<title>Q4. Deep Copy</title>
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+	<h1>Q4. Deep Copy</h1>
+	
+	<pre>
+var originalObj = {
+    num: 1,
+    str: "I am an old string",
+    Obj: {
+        val1: "Old value"
+    },
+    Arr: [
+        "a string",    
+        {  
+            val2: "Try changing me"       
+        }
+    ]
+};
+
+</pre>
+ 	
+ 	<div>originalObj.Obj.val1 => <span id="result1"></span></div>
+  <div>originalObj.Arr[1].val2 => <span id="result2"></span></div>
+
+
+    <script type="text/javascript" src="js/q4.js"></script>
+  </body>
+</html>

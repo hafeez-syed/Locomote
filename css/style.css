@@ -1,0 +1,63 @@
+body{
+	font-family: verdana;
+	font-size: 16px;
+}
+
+/* =========================================
+   Q1: Curry
+   ========================================== 
+*/
+
+pre {
+	background-color: #1AB7EA;
+	padding: 20px;
+	color: #fff;
+}
+
+/* =========================================
+   Q5: Tab Switching
+   ========================================== 
+*/
+
+.panel {
+	float: left;
+	margin: 0 10px 0 0;
+	background-color: #ddd;
+	padding: 1px;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.panelHeading {
+	padding: 5px;
+	background-color: #fff;
+	margin: 2px;
+}
+
+.tab {
+	float: left;
+	margin: 0;
+}
+
+.tabHeading {
+	cursor: pointer;
+	background-color: #333;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 12px 12px 0px 0px;
+	font-size: 19px;
+}
+
+.activeTab {
+	background-color: #1AB7EA;
+}
+
+article p, .hide {
+	display: none;
+	font-size: 10px;
+	padding: 0px 5px;
+}
+
+
+.show {
+	display: block;
+}

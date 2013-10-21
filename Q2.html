@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+	<title>Q2. Bind</title>
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+	<h1>Q2. Bind</h1>
+	
+	<pre>
+var add = function(a, b) {
+    return a + b;
+}
+
+var addTo = add.bind(undefined, 2);
+	</pre>
+ 	<div>addTo(5) => <span id="add"></span></div>
+
+	<pre>
+
+var say = function(something) { 
+	return something; 
+}
+
+var welcome = say.bind(undefined, 'Hi, how are you?');
+
+	</pre>
+ 	<div>welcome() => <span id="welcome"></span></div>
+
+    <script type="text/javascript" src="js/q2.js"></script>
+  </body>
+</html>
